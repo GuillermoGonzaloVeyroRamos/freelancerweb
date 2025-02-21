@@ -25,19 +25,26 @@
             <span>Freelancer</span></h1>
     </header>
 
-    <div class="nav-bg">
+    <div class="nav-bg" id="inicio">
         <nav class="navegacion-principal contenedor">
-            <a href="#">Inicio</a>
-            <a href="#">Sobre mi</a>
-            <a href="#">Clientes</a>
-            <a href="#">Contacto</a>
+            <a href="#sobre_mi">Sobre mi</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </div>
 
-    <section class="hero">
+    <section class="hero" id="sobre_mi">
         <div class="contenido-hero">        
             <h2>Diseño y Desarrollo Web 
                 <span>Freelancer</span></h2>
+            <p class="descripcionI">
+                Hola soy Guillermo Gonzalo Veyro Ramos, tengo 21 años, 
+                actualmente estoy cursando mi último semestre de Ing. 
+                De Software y Sistemas Computacionales, cuento con 1 año 
+                de experiencia en el desarrollo web, en E-Commerce y en 
+                desarrollo móvil.
+            </p>
 
             <div class="ubicacion">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -52,7 +59,7 @@
         </div>
     </section>
 
-    <main class="contenedor sombra">
+    <main class="contenedor sombra" id="servicios">
         <h2>Mis Servicios</h2>
 
         <div class="servicios">
@@ -114,7 +121,7 @@
             </section>
         </div>
 
-        <div class="portafolio">
+        <div class="portafolio" id="portafolio">
             <h2>Mi portafolio</h2>
             <div class="proyectos">
                 <div class="proyecto">
@@ -141,7 +148,7 @@
         </div>
    
 
-        <section>
+        <section id="contacto">
             <h2>Contacto</h2>
 
             <form class="formulario" action="https://formspree.io/f/mwpvnjgp" method="POST">
@@ -211,6 +218,12 @@
     <footer class="footer">
         <p>Todos los derechos reservados 2025. Guillermo Veyro Freelancer</p>
     </footer>
+
+    <div class="float_buttons">
+        <a href="#inicio" class="arrow"><img src="/img/arrow.png" alt=""></a>
+        <a href="https://wa.me/524771515109" class="Whatsapp"><img src="/img/whatsapp-icon.png" alt=""></a>
+    </div>
+
 
     <script>
         const form = document.querySelector('.formulario');
